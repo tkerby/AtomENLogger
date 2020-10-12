@@ -15,9 +15,9 @@ The Atom LED will flash for each exposure notification packet seen. The colours 
 - Yellow: Previously seen device with no GPS signal (will not save position data)
 - Blue: Previously seen device with valid GPS signal (will save position data)
 
-## Legal
 Notifiers (nearby devices with a warning app) are remembered for 20 minutes so it only flashes Red for newly detected ones. Note that the IDs will change every 15 minutes or so for privacy reasons, triggering new red flashes.
 
+## Legal
 Please check the legal status of Bluetooth Scanning and use of Exposure Notification data within your local jurisdiction. This application is provided as a proof of concept only and any use (or misuse) is the full responsibility of the end user. The author takes no responsibility and accepts no liability for the use of this software.
 
 ### Design Considerations
