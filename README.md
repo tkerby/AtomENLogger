@@ -18,10 +18,12 @@ The Atom LED will flash for each exposure notification packet seen. The colours 
 ## Legal
 Notifiers (nearby devices with a warning app) are remembered for 20 minutes so it only flashes Red for newly detected ones. Note that the IDs will change every 15 minutes or so for privacy reasons, triggering new red flashes.
 
-Please check the legal status of Bluetooth Scanning and use of Exposure Notification data within your local jurisdiction. This application is provided as a proof of concept only and any use or misuse is the full responsibility of the end user. The author takes no responsibility and accepts no liability for the use of this software.
+Please check the legal status of Bluetooth Scanning and use of Exposure Notification data within your local jurisdiction. This application is provided as a proof of concept only and any use (or misuse) is the full responsibility of the end user. The author takes no responsibility and accepts no liability for the use of this software.
 
 ### Design Considerations
-The application only stores bluetooth data from exposure notification packets which are anonymous by design and utilise rolling bluetooth MAC addresses and RPI codes to protect the privacy of users. No other bluetooth data is stored to avoid capture for instance of identifying device names or other nearby hardware. The EN packets are sent by bluetooth advertisement which is intended for general reception in the Bluetooth Protocols. No connection is negotiated with external devices and passive scanning is used to prevent requests for additional scan data.
+The application only stores bluetooth data from Exposure Notification packets. The Exposure Notification system has been designed by Apple and Google to provide anonymity by design using rolling Bluetooth MAC addresses and Rolling Proximity Identifier (RPI) codes. No other Bluetooth data is stored to avoid capture for instance of identifying device names or other nearby hardware. Further details of the privacy of the Exposure Notification system can be found at https://github.com/google/exposure-notifications-internals/blob/main/en-risks-and-mitigations-faq.md
+
+The EN packets are sent by Bluetooth Advertisement which is intended for general reception as per the Bluetooth standards. No connection is negotiated with external devices and passive scanning is used to prevent requests any request for additional scan data being sent to devices.
 
 ## Build your own
 ### You need
