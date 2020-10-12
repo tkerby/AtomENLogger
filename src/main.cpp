@@ -244,7 +244,7 @@ void setup() {
   BLEDevice::init("ESP");
   scanner = BLEDevice::getScan();
   scanner->setAdvertisedDeviceCallbacks(new MyAdvertisedDeviceCallbacks(),true);
-  scanner->setActiveScan(true); // Active scan uses more power, but gets results faster.
+  scanner->setActiveScan(false); // Dont request additional data from devices - passive scan only
   scanner->setInterval(100);
   scanner->setWindow(99);
   scanner->start(SCAN_TIME_SECONDS, scanCompleteCB);

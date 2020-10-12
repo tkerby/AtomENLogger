@@ -1,4 +1,5 @@
 .pio
+.vscode
 CMakeListsPrivate.txt
 cmake-build-*/ 
 binaries
