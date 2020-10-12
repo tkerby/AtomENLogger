@@ -1,6 +1,8 @@
 # BLE Exposure Notification Logger
 
-Builds on the excellent work of Kaspar Metz: https://github.com/kmetz/BLEExposureNotificationBeeper to provide logging of exposure notification beacons to a file including GPS coordinates. Where countries provide open access to the Temporary Exposure Keys, this data can be compared with the published keys to understand more details about where you were close to someone infected with COVID-19, allowing you to make a more accurate personal assessment of risk (e.g. ignore a match when alone in your car in a traffic jam).
+Builds on the excellent work of Kaspar Metz: https://github.com/kmetz/BLEExposureNotificationBeeper adding functionality for logging of exposure notification beacons to a file including GPS coordinates and timestamps. 
+
+Where countries provide open access to the Temporary Exposure Keys, this data can be compared with the published keys to understand more details about where you were close to someone infected with COVID-19, allowing you to make a more accurate personal assessment of risk (e.g. ignore a match when alone in your car in a traffic jam).
 
 With some data conversion, the https://github.com/mh-/diagnosis-keys application can be used to provide exposure information.
 
